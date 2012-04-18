@@ -33,6 +33,13 @@ Now you're ready to generate some parsers:
 This will generate `calculator.js` in your current working directory. This file can be used to parse an input file, like so:
 
     echo "2^32 / 1024" > testcalc
+
+or
+
+    echo 2^^32 / 1024 > testcalc
+
+if you are on the Windows box.
+
     node calculator.js testcalc
 
 This will print out `4194304`.
